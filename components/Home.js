@@ -47,6 +47,7 @@ function Home() {
 			console.log("Unmount");
 		};
 	}, []);
+	// test
 
 	const moviesApi = moviesData.map((data, i) => {
 		const isLiked = likedMovies.some((movie) => movie === data.title);
