@@ -37,7 +37,7 @@ function Home() {
 	const [moviesData, setMoviesData] = useState([]);
 	useEffect(() => {
 		console.log("Mount movie");
-		fetch("movies-backend-mauve.vercel.app/movies")
+		fetch("https://movies-backend-mauve.vercel.app/movies")
 			.then((response) => response.json())
 			.then((data) => {
 				setMoviesData(data.movies);
